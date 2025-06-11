@@ -1,0 +1,13 @@
+.video-banner-container .background-video-container {
+  padding-top: 136px;
+  height:100vh;
+}
+.video-banner-container .background-video {
+  padding-top: 0;
+}
+.video-banner-container .video-content {
+  height: 100%;
+}
+.video-banner-container .page-center {
+  height: 100%;
+}

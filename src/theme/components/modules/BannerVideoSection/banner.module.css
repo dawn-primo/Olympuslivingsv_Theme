@@ -1,0 +1,42 @@
+.banner_container {
+  position: relative;
+}
+.banner_container .img_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.banner_container .arrow_container {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.banner_container .arrow_container a.arrow_link {
+  color: #fff !important;
+  font-size: 30px;
+  animation: 3.4s ease-in-out infinite fadebottom;
+  -webkit-animation: 3.4s ease-in-out infinite fadebottom;
+}
+
+@keyframes fadebottom {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  45% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+}

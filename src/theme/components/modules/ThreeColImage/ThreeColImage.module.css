@@ -1,0 +1,63 @@
+.three_col_image_section .three_col_card_container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -12px;
+  justify-content: center;
+}
+
+.three_col_image_section .two_col .three_col_image {
+  width: calc(50% - 24px);
+  margin: 0 12px 35px;
+}
+.three_col_image_section .three_col .three_col_image {
+  width: calc(33.33% - 24px);
+  margin: 0 12px 35px;
+}
+.three_col_image_section .four_col .three_col_image {
+  width: calc(25% - 24px);
+  margin: 0 12px 35px;
+}
+
+.three_col_image_section .image_block img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.three_col_image_section .heading_content h2 {
+  margin: 0;
+  text-align:center;
+}
+.three_col_image_section .heading_content {
+  margin: 0 0 35px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .three_col_image_section .four_col .three_col_image {
+  width: calc(50% - 24px);
+  margin: 0 12px 35px;
+}
+}
+
+@media only screen and (max-width: 991px) {
+  .three_col_image_section .three_col .three_col_image {
+    width: calc(50% - 24px);
+    margin: 0 12px 35px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .three_col_image_section .two_col .three_col_image,
+  .three_col_image_section .three_col .three_col_image,
+  .three_col_image_section .four_col .three_col_image{
+    width: 100%;
+    margin: 0 0 24px;
+  }
+
+  .three_col_image_section .image_text_card:last-child {
+    margin: 0;
+  }
+  .three_col_image_section .three_col_card_container {
+    margin: 0;
+  }
+}

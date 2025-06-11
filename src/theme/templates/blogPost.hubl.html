@@ -1,0 +1,31 @@
+<!--
+    templateType: blog_post
+    isAvailableForNewContent: true
+    label: Blog post
+-->
+{% extends "./layouts/base.hubl.html" %} {% block body %}
+<main>
+
+  <section class="blog-post-section">
+    <div class="page-center">
+      <div class="inner-blog-post-section">
+        <!-- {% if content.featured_image %}
+        <div class="blog-post__image-wrapper">
+          <img class="blog-post__image" src="{{ content.featured_image }}" loading="eager" alt="{{ content.featured_image_alt_text }}">
+        </div>
+        {% endif %} -->
+         
+        <div class="heading-container">
+          <h1 class="blog-post-heading">{{ content.name }}</h1>
+        </div>
+        <div class="date"></div>
+        <div class="post-description">{{ content.post_body }}</div>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+
+<style></style>
+{% endblock body %}

@@ -1,0 +1,84 @@
+.border_bottom {
+  border-bottom: 1px solid #6b973f;
+}
+
+.full_width_section .section_title {
+  margin-bottom: 60px;
+  text-align: center;
+}
+.full_width_section h1 {
+  margin: 0;
+}
+.full_width_section .richtext_content {
+  margin-bottom: 35px;
+}
+.full_width_section .button_wrapper a {
+  width: 400px;
+  justify-content: center;
+}
+.button_container {
+  margin-bottom: 45px;
+}
+.button_container .button_inner_section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.button_container .button_inner_section .bottom_columns:last-child a:hover span{
+ transform: translateX(0);
+}
+.richtext_block {
+  /* max-width: 1058px; */
+  padding: 0 0 40px;
+  margin: 0 auto;
+  /* text-align: center; */
+}
+.richtext_block p:last-child{
+  margin: 0;
+}
+.activity_list_section {
+  padding: 40px 0;
+}
+.activity_list_section .section_title {
+  margin-bottom: 35px;
+}
+.activity_list_section .section_title h3 {
+  margin: 0;
+}
+.activity_list_section .flex_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.activity_list_section .list_group {
+  max-width: 300px;
+  width: 100%;
+}
+.activity_list_section .list_group ul {
+  margin: 0 0 0 30px;
+  padding: 0;
+}
+.activity_list_section .list_group ul li {
+  color: #000;
+}
+
+@media (max-width: 991px) {
+  .full_width_section .section_title {
+    margin-bottom: 35px;
+  }
+  .full_width_section .button_wrapper a {
+    width: auto;
+  }
+  .button_container .button_inner_section {
+    justify-content: center;
+    text-align: center;
+  }
+  .button_container .button_inner_section .bottom_columns {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .button_container .button_inner_section .bottom_columns a {
+    justify-content: center;
+  }
+}
