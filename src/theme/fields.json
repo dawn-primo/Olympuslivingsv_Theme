@@ -844,7 +844,7 @@
                     "type": "number",
                     "help_text": "Value is in pixels",
                     "display": "slider",
-                    "default": 12
+                    "default": 16
                   },
                   {
                     "label": "Vertical spacing",
@@ -855,7 +855,7 @@
                     "max": 200,
                     "min": 0,
                     "step": 1,
-                    "default": 10
+                    "default": 7
                   },
                   {
                     "label": "Horizontal spacing",
@@ -866,7 +866,7 @@
                     "max": 200,
                     "min": 0,
                     "step": 1,
-                    "default": 40
+                    "default": 20
                   }
                 ]
               },
@@ -918,7 +918,7 @@
                     "type": "number",
                     "help_text": "Value is in pixels",
                     "display": "slider",
-                    "default": 20
+                    "default": 18
                   },
                   {
                     "label": "Vertical spacing",
@@ -929,7 +929,7 @@
                     "max": 200,
                     "min": 0,
                     "step": 1,
-                    "default": 28
+                    "default": 25
                   },
                   {
                     "label": "Horizontal spacing",
@@ -940,7 +940,7 @@
                     "max": 200,
                     "min": 0,
                     "step": 1,
-                    "default": 46
+                    "default": 40
                   }
                 ]
               }
@@ -1103,7 +1103,7 @@
                     "name": "bg_color",
                     "type": "color",
                     "default": {
-                      "color": "#6b973f",
+                      "color": "#313f1f",
                       "opacity": 87
                     }
                   },
@@ -1439,7 +1439,7 @@
                   }
                 },
                 "default":{
-                  "color":"#6b973f"
+                  "color":"#313f1f"
                 }
               },
               {
@@ -1529,7 +1529,7 @@
                       }
                     },
                     "default": {
-                      "color": "#6b973f",
+                      "color": "#313f1f",
                       "variant": 700
                     }
                   },
