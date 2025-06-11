@@ -363,7 +363,7 @@ list-style: none;
 }
 }
 @media (max-width: 1080px) {
-.header .header__logo {
+.header .header__logo { 
   width: 37%;
 }
 .header .menu_icon_wrapper {
