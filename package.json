@@ -3,7 +3,7 @@
   "description": "Getting started with CMS React",
   "devDependencies": {
     "@hubspot/cli": "^7.4.8",
-    "@hubspot/cms-dev-server": "^1.0.31",
+    "@hubspot/cms-dev-server": "^1.0.33",
     "@hubspot/prettier-plugin-hubl": "latest",
     "babel-plugin-styled-components": "^2.1.4",
     "eslint": "^8.24.0",
