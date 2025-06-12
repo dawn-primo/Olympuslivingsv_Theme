@@ -58,7 +58,7 @@ const moduleClass = props?.moduleName || 'customclass';
            style={{ backgroundColor: two_col_container_bg }}>
             <div className={Styles.left_container}>
               <div className={Styles.left_container_inner} style={{ backgroundColor: two_col_bg }}>
-                <div className={Styles.image_content}>
+               <div className={`${Styles.image_content} wow animate__animated animate__fadeIn`}>
                   <RenderImage imageField={image} />
                 </div>
               </div>

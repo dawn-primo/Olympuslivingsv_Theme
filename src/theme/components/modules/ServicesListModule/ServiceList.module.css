@@ -1,5 +1,5 @@
 .service_list_section .heading_container {
-  background-color: #6b973f;
+  background-color: #313f1f;
 }
 .service_list_section .heading_container {
   text-align: center;
@@ -58,7 +58,7 @@
   width: 13px;
   height: 13px;
   transform: translateY(-50%);
-  background-color: #6b973f;
+  background-color: #313f1f;
   border-radius: 100%;
 }
 

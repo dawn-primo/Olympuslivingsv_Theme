@@ -13,7 +13,7 @@
   margin-bottom: 0;
 }
 .two_col_sec .contact_icon_container svg {
-  fill: #6b973f;
+  fill: #313f1f;
   width: 34px;
   height: 34px;
 }
@@ -45,7 +45,7 @@
   margin: 0 12px;
 }
 .two_col_sec .mobile_number p > a {
-  color: #6b973f;
+  color: #313f1f;
   transition: color 0.3s;
 }
 .two_col_sec .mobile_number p > a:hover {
