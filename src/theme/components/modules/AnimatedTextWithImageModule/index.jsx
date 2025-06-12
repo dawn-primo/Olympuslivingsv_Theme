@@ -3,6 +3,7 @@ import styles from '../ActivitySection/activitySection.module.css';
 import { Island, logInfo } from '@hubspot/cms-components';
 import ResponsiveSpacingWrapper from '../../shared/SpacingStyleComponent/ResponsiveSpacingWrapper.jsx';
 import AnimatedText from '../../islands/AnimatedText?island';
+import RenderImage from '../../shared/ImageComponent/imageRenderer.jsx';
 
 
 export const Component = props => {
