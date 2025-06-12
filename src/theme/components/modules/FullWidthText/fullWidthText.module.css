@@ -18,13 +18,13 @@ margin: 0;
 .full_width_section .button_wrapper {
 margin-top: 35px;
 }
-.full_width_section .button_wrapper .button--large{
-  max-width: 397px;
-    width: 100%;
-}
 .full_width_section .button_wrapper a {
 width: auto;
 justify-content: center;
+}
+.full_width_section .button_wrapper a{
+    max-width: 397px !important;
+    width: 100% !important;
 }
 .bottom_section {
 margin-top: 35px;
