@@ -1,64 +1,68 @@
 /* .border_bottom {
-  border-bottom: 1px solid #000;
+border-bottom: 1px solid #000;
 } */
 .full_width_section .inner_container {
-  max-width: 1058px;
-  padding: 0 15px 40px;
-  margin: 0 auto;
-  text-align: center;
+max-width: 1058px;
+padding: 0 15px 40px;
+margin: 0 auto;
+text-align: center;
 }
 .full_width_section .section_title {
-  margin-bottom: 35px;
+margin-bottom: 35px;
 }
 .full_width_section h1 {
-  margin: 0;
+margin: 0;
 }
 
 .full_width_section .button_wrapper {
-  margin-top: 35px;
+margin-top: 35px;
+}
+.full_width_section .button_wrapper .button--large{
+  max-width: 397px;
+    width: 100%;
+}
+.full_width_section .button_wrapper a {
+width: auto;
+justify-content: center;
+}
+.bottom_section {
+margin-top: 35px;
+}
+.bottom_section .bottom_inner_section {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+margin: 0 -12px;
+}
+.bottom_section .bottom_columns {
+width: calc(33.33% - 24px);
+margin: 0 12px;
+}
+.bottom_section .bottom_columns.button_block a {
+width: 100%;
+justify-content: center;
+}
+.bottom_section .logo_wrapper {
+max-width: 100px;
+margin: 0 auto;
+}
+.bottom_section .logo_wrapper img {
+width: 100%;
+}
+@media (max-width: 991px) {
+.bottom_section .bottom_inner_section {
+  margin: 0;
+}
+.bottom_section .bottom_columns {
+  width: 100%;
+  margin: 0 12px;
 }
 .full_width_section .button_wrapper a {
   width: auto;
-  justify-content: center;
-}
-.bottom_section {
-  margin-top: 35px;
 }
 .bottom_section .bottom_inner_section {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 -12px;
-}
-.bottom_section .bottom_columns {
-  width: calc(33.33% - 24px);
-  margin: 0 12px;
-}
-.bottom_section .bottom_columns.button_block a {
-  width: 100%;
   justify-content: center;
+  text-align: center;
 }
-.bottom_section .logo_wrapper {
-  max-width: 100px;
-  margin: 0 auto;
-}
-.bottom_section .logo_wrapper img {
-  width: 100%;
-}
-@media (max-width: 991px) {
-  .bottom_section .bottom_inner_section {
-    margin: 0;
-  }
-  .bottom_section .bottom_columns {
-    width: 100%;
-    margin: 0 12px;
-  }
-  .full_width_section .button_wrapper a {
-    width: auto;
-  }
-  .bottom_section .bottom_inner_section {
-    justify-content: center;
-    text-align: center;
-  }
 }
