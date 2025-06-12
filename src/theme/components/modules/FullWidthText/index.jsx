@@ -84,7 +84,7 @@ export const Component = props => {
                     </div>
                   }
                   {showButton &&
-                    <div className={`${styles.button_wrapper} wow animate__animated animate__slideInDown`}>
+                    <div className={`${styles.button_wrapper}`}>
                       <Button
                         buttonSize={buttonStyleSize}
                         buttonStyle={buttonStyleVariant}

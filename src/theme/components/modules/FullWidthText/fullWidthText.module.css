@@ -9,7 +9,9 @@ text-align: center;
 }
 .full_width_section .section_title {
 margin-bottom: 35px;
-padding-bottom:67px;
+}
+.full_width_section hr{
+  margin-top:67px;
 }
 .full_width_section h1 {
 margin: 0;
