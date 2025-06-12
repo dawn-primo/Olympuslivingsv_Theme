@@ -1,15 +1,17 @@
 import React from 'react';
 import styles from '../ActivitySection/activitySection.module.css';
-import { logInfo } from '@hubspot/cms-components';
+import { Island, logInfo } from '@hubspot/cms-components';
 import ResponsiveSpacingWrapper from '../../shared/SpacingStyleComponent/ResponsiveSpacingWrapper.jsx';
-import HeadingComponent from '../../shared/HeadingComponent/HeadingComponent';
+import AnimatedText from '../../islands/AnimatedText?island';
 
 
 export const Component = props => {
   // logInfo('Props passed to Activity Section:', props);
   const {
     module_id,
-    headingAndTextHeadingLevel, headingAndTextHeading, richTextContentHTML,
+    animation_prefix_text,
+    animation_suffix_text,
+    add_animated_text = [],
     image
   } = props;
 
@@ -20,20 +22,15 @@ export const Component = props => {
         <div className={styles.animated_text_section}>
           <div className='page-center'>
             <div className={styles.inner_animated_text_section}>
-                {headingAndTextHeading && (
-                    <div className="heading_container">
-                    <HeadingComponent headingLevel={headingAndTextHeadingLevel}
-                        headingStyleColor={headingStyleColor}
-                        heading={headingAndTextHeading} additonalClass='font-300' />
-                    </div>
-                )}
+                <h2>{animation_prefix_text}</h2>
+                     <Island module={AnimatedText} hydrateOn="idle" props={props} clientOnly />
+                <h2>{animation_suffix_text}</h2>
                 <div className="image_container">
                     <div className="inner_image_container">
                          <RenderImage imageField={image} />
                     </div>
                 </div>
             </div>
-           
           </div>
         </div>
       </ResponsiveSpacingWrapper >
