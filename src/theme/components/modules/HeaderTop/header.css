@@ -347,7 +347,12 @@ list-style: none;
 
 @media (min-width: 1200px) {
 /*  used to be 961 - need to change back? */
-
+header.header {
+    max-height: 60px;
+}
+.header__logo img {
+    max-width: 100px;
+}
 .mobile-trigger-new,
 .child-trigger-new {
   display: none !important; /* Hide button on Desktop */
