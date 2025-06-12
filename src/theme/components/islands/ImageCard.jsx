@@ -4,6 +4,7 @@ import $ from 'jquery';
 import 'jquery-match-height';
 import HeadingComponent from '../shared/HeadingComponent/HeadingComponent';
 import RenderImage from '../shared/ImageComponent/imageRenderer.jsx';
+import { RichText } from '@hubspot/cms-components';
 window.$ = window.jQuery = $;
 
 export default function ImageCard({ groupBlocks }) {
@@ -47,7 +48,8 @@ export default function ImageCard({ groupBlocks }) {
                   </div>
                 </div>
                 <div className={Styles.text_block}>
-                  <div className={Styles.text_block_inner} dangerouslySetInnerHTML={{ __html: item.richTextContentHTML }}>
+                  <div className={Styles.text_block_inner}>
+<RichText fieldPath={`groupBlocks[${index}].content`} />
 
                   </div>
                 </div>

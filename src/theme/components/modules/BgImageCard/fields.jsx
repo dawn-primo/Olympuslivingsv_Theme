@@ -37,10 +37,10 @@ export const fields = (
         showLoading={true}
       >
       </ImageField>
-      <RichTextContent
+      <RichTextField
         label="Content"
-        richTextDefault="<p>Write a description highlighting the functionality, benefits, and uniqueness of your feature. A couple of sentences here is just right.</p>"
-        featureSet="text"
+        name="content"
+        default=""
       />
     </RepeatedFieldGroup>
   </ModuleFields>
