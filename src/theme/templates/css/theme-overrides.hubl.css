@@ -494,12 +494,12 @@ form .legal-consent-container .hs-richtext p {
 /* Validation */
 
 .hs-input.invalid.error {
-  border-color: #6b973f;
+  border-color: #313f1f;
 }
 
 .hs-error-msg,
 .hs-error-msgs {
-  color: #6b973f;
+  color: #313f1f;
 }
 
 /* Submit */

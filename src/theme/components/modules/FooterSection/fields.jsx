@@ -41,43 +41,6 @@ export const fields = (
 
     <TextField name="phone_number" label="Phone Number"></TextField>
 
-    <TextField
-      name="datetime"
-      label="Days and Time"
-      default="Monday – Friday 8 am – 4 pm"
-    />
-
-    <LinkField
-      name="site_map"
-      label="Site Map Link"
-      supportedTypes={[
-        'EXTERNAL',
-        'CONTENT',
-        'FILE',
-        'EMAIL_ADDRESS',
-        'BLOG',
-        'CALL_TO_ACTION',
-        'PHONE_NUMBER',
-        'WHATSAPP_NUMBER',
-        'PAYMENT',
-      ]}
-      showAdvancedRelOptions={true}
-      default={{
-        url: {
-          content_id: null,
-          type: 'EXTERNAL',
-          href: '',
-        },
-        open_in_new_tab: false,
-        no_follow: false,
-      }}
-    ></LinkField>
-    <TextField
-      name="site_map_text"
-      label="Heading"
-      default="Sitemap"
-    ></TextField>
-
     <RichTextField
       name="privacy_text"
       label="Privacy Text"

@@ -172,7 +172,7 @@ img {
 
 hr {
   border: 0 none;
-  border-bottom: 1px solid #6b973f;
+  border-bottom: 1px solid #313f1f;
 }
 
 /* Subscripts and Superscripts */
@@ -399,7 +399,7 @@ textarea {
 
 input:focus,
 textarea:focus {
-  border-bottom: 2px solid #6b973f !important;
+  border-bottom: 2px solid #313f1f !important;
 }
 
 input[type='text']::placeholder,

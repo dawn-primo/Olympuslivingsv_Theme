@@ -112,7 +112,7 @@ export function Component(props) {
                       ><FaFacebookF />
                       </a>
                     </div>
-                    <IconContext.Provider value={{ color: "#6b973f", className: "facebook" }}>
+                    <IconContext.Provider value={{ color: "#313f1f", className: "facebook" }}>
                       <div className="facebook_icon_hover"><a
                         href={facebook_link?.url?.href_with_scheme || '#'}
                         target={
@@ -155,7 +155,7 @@ export function Component(props) {
                       >
                         <FaLinkedinIn />
                       </a></div>
-                    <IconContext.Provider value={{ color: "#6b973f", className: "linkedin" }}>
+                    <IconContext.Provider value={{ color: "#313f1f", className: "linkedin" }}>
                       <div className="linkedin_icon_hover">
                         <a
                           href={linkedin_link?.url?.href_with_scheme || '#'}
@@ -222,7 +222,7 @@ export function Component(props) {
                         ><FaFacebookF />
                         </a>
                       </div>
-                      <IconContext.Provider value={{ color: "#6b973f", className: "facebook" }}>
+                      <IconContext.Provider value={{ color: "#313f1f", className: "facebook" }}>
                         <div className="facebook_icon_hover"><a
                           href={facebook_link?.url?.href_with_scheme || '#'}
                           target={
@@ -265,7 +265,7 @@ export function Component(props) {
                         >
                           <FaLinkedinIn />
                         </a></div>
-                      <IconContext.Provider value={{ color: "#6b973f", className: "linkedin" }}>
+                      <IconContext.Provider value={{ color: "#313f1f", className: "linkedin" }}>
                         <div className="linkedin_icon_hover">
                           <a
                             href={linkedin_link?.url?.href_with_scheme || '#'}
