@@ -45,6 +45,6 @@ export const Component = props => {
 export { fields } from './fields.jsx';
 
 export const meta = {
-  label: 'Activity Section',
+  label: 'Animated Text With Image Module',
 };
 
