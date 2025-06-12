@@ -3,6 +3,7 @@ import styles from './FooterModule.module.css';
 import { logInfo, RichText } from '@hubspot/cms-components';
 import { FaHome, FaSearch } from 'react-icons/fa';
 import { IoIosCall } from 'react-icons/io';
+import RenderImage from '../../shared/ImageComponent/imageRenderer.jsx';
 
 export function Component(props) {
   const {
@@ -95,7 +96,7 @@ export function Component(props) {
                         .join(' ') || undefined
                     }
                   >
-                        <img src={footer_logo.src}></img>
+                          <RenderImage imageField={footer_logo} />
                       </a>
                     </div>
                   </div>
