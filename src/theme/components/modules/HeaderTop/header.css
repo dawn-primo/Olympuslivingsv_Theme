@@ -12,7 +12,7 @@ transition: box-shadow 0.42s ease, opacity 0.3s ease;
 width: 15%;
 }
 .header.small-header .header__menu .hs-menu-wrapper > ul > li {
-padding: 18px 10px;
+padding: 55px 10px;
 }
 .header__container {
 align-items: center;
