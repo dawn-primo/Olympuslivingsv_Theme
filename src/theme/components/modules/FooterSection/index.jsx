@@ -69,29 +69,6 @@ export function Component(props) {
                   <p>{datetime}</p>
                 </div>
               </div>
-              <div className={styles.inner_flex_container}>
-                <div className={styles.icon_block}>
-                  <FaSearch />
-                </div>
-                <div className={styles.content_block}>
-                  <a
-                    href={site_map?.url?.href_with_scheme || '#'}
-                    target={site_map?.open_in_new_tab ? '_blank' : '_self'}
-                    rel={
-                      [
-                        site_map?.no_follow ? 'nofollow' : '',
-                        site_map?.sponsored ? 'sponsored' : '',
-                        site_map?.user_generated_content ? 'ugc' : '',
-                        site_map?.rel || '',
-                      ]
-                        .filter(Boolean)
-                        .join(' ') || undefined
-                    }
-                  >
-                    {site_map_text}
-                  </a>
-                </div>
-              </div>
             </div>
             {/* Privacy text and logo  */}
             <div className={styles.footer_column}>
