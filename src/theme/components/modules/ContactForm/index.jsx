@@ -1,4 +1,4 @@
-import { Form, logInfo, Icon } from '@hubspot/cms-components';
+import { Form, logInfo, Icon, RichText } from '@hubspot/cms-components';
 import Styles from '../ContactForm/contactForm.module.css';
 import ResponsiveSpacingWrapper from '../../shared/SpacingStyleComponent/ResponsiveSpacingWrapper.jsx';
 import HeadingComponent from '../../shared/HeadingComponent/HeadingComponent.jsx';
@@ -62,10 +62,10 @@ export function Component(props) {
                             />
                           )}
                         </div>
-                        <div
+                      <RichText
+                          fieldPath="contact_group.phonenumber"
                           className="mobile_number"
-                          dangerouslySetInnerHTML={{ __html: phonenumber }}
-                        ></div>
+                        />
                       </div>
                     </div>
 
@@ -80,16 +80,20 @@ export function Component(props) {
                           </div>
                           <div className={Styles.contact_title_container}>
                             <div
-                              className="address"
-                              dangerouslySetInnerHTML={{ __html: item.content }}
-                            ></div>
+                              className="address" >
+                                <RichText
+                                fieldPath={`left_content_group[${index}].content`}
+                              />
+                              </div>
                           </div>
                         </div>
 
                         <div
-                          className="map_wrapper"
-                          dangerouslySetInnerHTML={{ __html: item.map_iframe }}
-                        ></div>
+                          className="map_wrapper">
+                            <RichText
+                            fieldPath={`left_content_group[${index}].map_iframe`}
+                          />
+                          </div>
                       </div>
                     ))}
                   </div>
