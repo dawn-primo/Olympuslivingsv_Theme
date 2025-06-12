@@ -3,11 +3,9 @@ import {
   FieldGroup,
   FormField,
   IconField,
-  ImageField,
   ModuleFields,
   RepeatedFieldGroup,
   RichTextField,
-  TextField,
 } from '@hubspot/cms-components/fields';
 import CommonStylesSpacingFields from '../../shared/SpacingStyleComponent/CommonStylesSpacingFields.jsx';
 import HeadingStyles from '../../shared/HeadingComponent/HeadingStyle.jsx';
@@ -26,13 +24,17 @@ export const fields = (
 
       <HeadingContent />
       <HeadingStyles headingStyleAsDefault="h2" />
-      <TextField name="phonenumber" label="Phone Number"></TextField>
+      <RichTextField name='phonenumber' label='Phone Number'></RichTextField>
     </FieldGroup>
 
     <RepeatedFieldGroup name="left_content_group" label="Left Content Group">
       <IconField label="Icon Image" name="icon_image" />
-      <RichTextField name="content" label="Content"></RichTextField>
-      <RichTextField name="map_iframe" label="Map Iframe"></RichTextField>
+      <RichTextField name="content" label="Content" default=""></RichTextField>
+      <RichTextField
+        name="map_iframe"
+        label="Map Iframe"
+        default=""
+      ></RichTextField>
     </RepeatedFieldGroup>
 
     <FormField name="contact_form" label="Contact Form"></FormField>

@@ -1,5 +1,6 @@
 .text_with_bg_img {
   overflow: hidden;
+    position: relative;
 }
 .text_with_bg_img .main_container {
   transform: scale(1);
@@ -13,7 +14,6 @@
   display: block;
   object-fit: cover;
   /* object-position: bottom; */
-  position: relative;
 }
 .text_with_bg_img .main_container.overlay_color {
   position: relative;
