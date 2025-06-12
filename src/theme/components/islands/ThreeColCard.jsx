@@ -22,7 +22,7 @@ export default function Threecolcard({
           <div className={Styles.three_col_card} key={index}>
             <div className={Styles.three_col_card_inner}>
               <div className={Styles.card_heading}>
-                <h3 style={{ color: card_heading_text_color }}>
+                <h3 style={{ color: card_heading_text_color }} className='font-300'>
                   {card.card_heading}
                 </h3>
               </div>

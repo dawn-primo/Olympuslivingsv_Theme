@@ -15,19 +15,16 @@
 .three_col_card_sec .two_col .three_col_card {
   width: calc(50% - 24px);
   margin: 0 12px 35px;
-  border-radius: 12px;
   overflow: hidden;
 }
 .three_col_card_sec .three_col .three_col_card {
   width: calc(33.33% - 24px);
   margin: 0 12px 35px;
-  border-radius: 12px;
   overflow: hidden;
 }
 .three_col_card_sec .four_col .three_col_card {
   width: calc(25% - 24px);
   margin: 0 12px 35px;
-  border-radius: 12px;
   overflow: hidden;
 }
 .three_col_card_sec .three_col_card_inner {
@@ -36,7 +33,7 @@
 }
 .three_col_card_sec .card_heading {
   text-align: center;
-  padding: 15px 15px 35px;
+  padding: 15px;
 }
 .three_col_card_sec .card_heading h3 {
   margin: 0;
@@ -76,7 +73,10 @@
 .three_col_card_sec .icon_content svg {
   width: 33px;
   height: 33px;
-  fill: #6b973f;
+  fill: #313f1f;
+}
+.three_col_card_sec .heading_content h4{
+  margin-top:27px;
 }
 
 @media only screen and (max-width: 1199px) {
