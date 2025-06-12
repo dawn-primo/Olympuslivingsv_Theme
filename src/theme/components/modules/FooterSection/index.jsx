@@ -81,7 +81,20 @@ export function Component(props) {
                   </div>
                   <div className={styles.footer_logo_side}>
                     <div className={styles.logo_block}>
-                      <a href={logo_link?.url?.href}>
+                       <a
+                    href={logo_link?.url?.href_with_scheme || '#'}
+                    target={logo_link?.open_in_new_tab ? '_blank' : '_self'}
+                    rel={
+                      [
+                        logo_link?.no_follow ? 'nofollow' : '',
+                        logo_link?.sponsored ? 'sponsored' : '',
+                        logo_link?.user_generated_content ? 'ugc' : '',
+                        logo_link?.rel || '',
+                      ]
+                        .filter(Boolean)
+                        .join(' ') || undefined
+                    }
+                  >
                         <img src={footer_logo.src}></img>
                       </a>
                     </div>

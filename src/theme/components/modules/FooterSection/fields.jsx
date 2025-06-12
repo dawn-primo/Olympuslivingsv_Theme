@@ -47,7 +47,29 @@ export const fields = (
       default=""
     ></RichTextField>
 
-    <LinkField name="logo_link" label="Logo Link" default=""></LinkField>
+    <LinkField name="logo_link" label="Logo Link" 
+     supportedTypes={[
+        'EXTERNAL',
+        'CONTENT',
+        'FILE',
+        'EMAIL_ADDRESS',
+        'BLOG',
+        'CALL_TO_ACTION',
+        'PHONE_NUMBER',
+        'WHATSAPP_NUMBER',
+        'PAYMENT',
+      ]}
+      showAdvancedRelOptions={true}
+      default={{
+        url: {
+          content_id: null,
+          type: 'EXTERNAL',
+          href: '',
+        },
+        open_in_new_tab: false,
+        no_follow: false,
+      }}
+    ></LinkField>
 
     <ImageField
       name="footer_logo"
