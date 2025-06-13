@@ -3,7 +3,7 @@ import Styles from '../modules/AnimatedTextWithImageModule/animatedText.module.c
 import Typewriter from 'typewriter-effect';
 
 export default function AnimatedText({ add_animated_text = [] }) {
-  const textArray = add_animated_text.map(item => item.animated_text).filter(Boolean);
+  const textArray = add_animated_text.map(item => item.animated_text);
 
   useEffect(() => {
     console.log('Animated Text Array:', textArray);
