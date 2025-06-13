@@ -8,8 +8,6 @@ import {
 import CommonStylesSpacingFields from '../../shared/SpacingStyleComponent/CommonStylesSpacingFields.jsx';
 
 
-
-
 export const fields = (
   <ModuleFields>
 
