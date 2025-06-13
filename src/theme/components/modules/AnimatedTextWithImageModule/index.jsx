@@ -25,8 +25,8 @@ export const Component = props => {
 
             <Island
               module={AnimatedText}
-              hydrateOn="load"
-              add_animated_text={{ add_animated_text }}
+              hydrateOn="idle"
+              props={{ add_animated_text }}
               clientOnly
             />
 
