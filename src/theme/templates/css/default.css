@@ -1126,3 +1126,12 @@ input::placeholder {
 .__react_modal_image__caption {
   display: none !important;
 }
+
+
+/* animated sec */
+.animated_text_section .animation_content .animited_text span.h2{
+font-weight:700;
+}
+.animated_text_section .Typewriter{
+    margin:0 8px;
+ }
