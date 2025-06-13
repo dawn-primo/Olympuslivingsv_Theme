@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../ActivitySection/activitySection.module.css';
-import { Island } from '@hubspot/cms-components';
+import { Island, logInfo } from '@hubspot/cms-components';
 import ResponsiveSpacingWrapper from '../../shared/SpacingStyleComponent/ResponsiveSpacingWrapper.jsx';
 import AnimatedText from '../../islands/AnimatedText?island';
 import RenderImage from '../../shared/ImageComponent/imageRenderer.jsx';
