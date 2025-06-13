@@ -53,6 +53,9 @@ margin: 0 auto;
 .bottom_section .logo_wrapper img {
 width: 100%;
 }
+.life-enrichment-space .section_title{
+  margin-bottom: 0;
+}
 @media (max-width: 991px) {
 .bottom_section .bottom_inner_section {
   margin: 0;
