@@ -45,6 +45,9 @@
 .font-roboto {
   font-family: 'Roboto', sans-serif;
 }
+.hs-richtext.hs-main-font-element{
+  margin-bottom:7px;
+}
 
 body {
   overflow-wrap: break-word;
