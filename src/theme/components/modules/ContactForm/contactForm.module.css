@@ -79,6 +79,9 @@
   padding: 24px 0 0;
   border: none;
 }
+.two_col_sec .hs-richtext.hs-main-font-element h2 {
+    margin-bottom: 7px !important;
+}
 
 @media only screen and (max-width: 991px) {
   .two_col_sec .hs-responsive-embed-wrapper {
