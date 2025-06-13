@@ -10,9 +10,20 @@
 .animated_text_section .animation_content h2,.animated_text_section .animation_content span{
     margin:0;
 }
+/* .animated_text_section .animation_content .animited_text span{
+  font-family:Hind, sans-serif;
+  font-size:36px;
+font-weight:300;
+} */
 .animated_text_section .large_heading h1{
     margin:0;
 }
 .animated_text_section .image_container{
-margin-bottom: -20%;
+
+}
+.animated_text_section .image_container img{
+    width:100%;
+    max-width:100%;
+    margin-bottom: -20%;
+    display:block;
 }
