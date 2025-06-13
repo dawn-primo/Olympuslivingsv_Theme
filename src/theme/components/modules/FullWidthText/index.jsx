@@ -65,7 +65,7 @@ export const Component = props => {
 
   return (
     <>
-      <ResponsiveSpacingWrapper moduleId={props?.module?.module_id} fields={props?.fieldValues} additonalClass={moduleClass}>
+      <ResponsiveSpacingWrapper moduleId={props?.module?.module_id} fields={props?.fieldValues} className={moduleClass}>
         <div className={styles.full_width_section}>
           <div className='page-center'>
             <div className={styles.border_bottom} style={show_border ? { borderBottom: '1px solid #000' } : {}}>
