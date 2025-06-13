@@ -12,6 +12,7 @@ export const Component = props => {
   // logInfo('Props passed to FullWidthText Section:', props);
   const {
     module_id,
+    moduleClass,
     groupContent: { headingAndTextHeadingLevel, headingAndTextHeading, richTextContentHTML },
     groupButton: {
       showButton,
@@ -55,7 +56,7 @@ export const Component = props => {
       } }
   } = props;
 
-  const moduleClass = props?.moduleName || 'customclass';
+  // const moduleClass = props?.moduleName || 'customclass';
 
   const buttonHref = getLinkFieldHref(link);
   const buttonRel = getLinkFieldRel(link);
@@ -64,7 +65,7 @@ export const Component = props => {
 
   return (
     <>
-      <ResponsiveSpacingWrapper moduleId={props?.module?.module_id} fields={props?.fieldValues} className={moduleClass}>
+      <ResponsiveSpacingWrapper moduleId={props?.module?.module_id} fields={props?.fieldValues} additonalClass={moduleClass}>
         <div className={styles.full_width_section}>
           <div className='page-center'>
             <div className={styles.border_bottom} style={show_border ? { borderBottom: '1px solid #000' } : {}}>
