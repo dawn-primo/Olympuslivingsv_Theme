@@ -1,13 +1,16 @@
 import React, { useEffect } from 'react';
-import Styles from '../modules/AnimatedTextWithImageModule/animatedText.module.css';
 import Typewriter from 'typewriter-effect';
+import Styles from '../modules/AnimatedTextWithImageModule/animatedText.module.css';
 
 export default function AnimatedText({ add_animated_text = [] }) {
-  const textArray = add_animated_text.map(item => item.animated_text);
+  const textArray = add_animated_text
+    .map(item => item.animated_text)
+    .filter(Boolean);
 
   useEffect(() => {
-    console.log('Animated Text Array:', textArray);
-  }, [textArray]);
+    console.log('Raw data:', add_animated_text);
+    console.log('Filtered array:', textArray);
+  }, [add_animated_text]);
 
   return (
     <div className={Styles.heading_container}>
@@ -15,7 +18,6 @@ export default function AnimatedText({ add_animated_text = [] }) {
         <Typewriter
           options={{
             strings: textArray,
-           // strings: ['Test 1', 'Test 2'],
             autoStart: true,
             loop: true,
           }}
