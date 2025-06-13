@@ -14,6 +14,8 @@ export const Component = props => {
     image
   } = props;
 
+  logInfo('Animated Section:', props);
+
   return (
     <ResponsiveSpacingWrapper moduleId={module_id} fields={props?.fieldValues}>
       <div className={styles.animated_text_section}>

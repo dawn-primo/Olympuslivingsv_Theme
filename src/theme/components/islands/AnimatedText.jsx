@@ -14,8 +14,8 @@ export default function AnimatedText({ add_animated_text = [] }) {
       {textArray.length > 0 && (
         <Typewriter
           options={{
-            // strings: textArray,
-            strings: ['Test 1', 'Test 2'],
+            strings: textArray,
+           // strings: ['Test 1', 'Test 2'],
             autoStart: true,
             loop: true,
           }}
