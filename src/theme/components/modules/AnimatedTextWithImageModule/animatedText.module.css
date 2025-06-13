@@ -28,3 +28,11 @@ font-weight:600;
     display: inline-block;
 }
 
+@media only screen and (max-width:767px){
+    .animated_text_section .image_container img{
+    margin-bottom: -27%;
+}
+.animated_text_section .animation_content{
+        margin:0 0 50px;
+}
+}
