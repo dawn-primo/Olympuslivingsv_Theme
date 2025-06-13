@@ -1,0 +1,18 @@
+.animated_text_section .text_container{
+    text-align:center;
+}
+.animated_text_section .animation_content{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        margin:0 0 70px;
+}
+.animated_text_section .animation_content h2,.animated_text_section .animation_content span{
+    margin:0;
+}
+.animated_text_section .large_heading h1{
+    margin:0;
+}
+.animated_text_section .image_container{
+margin-bottom: -30%;
+}
