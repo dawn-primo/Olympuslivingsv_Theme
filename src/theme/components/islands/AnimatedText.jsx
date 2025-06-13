@@ -21,7 +21,8 @@ export default function AnimatedText({ add_animated_text = [] }) {
             strings: textArray,
             autoStart: true,
             loop: true,
-            wrapperClassName: 'h2'
+            wrapperClassName: 'h2',
+            cursorClassName: 'h2'
           }}
         />
       )}
