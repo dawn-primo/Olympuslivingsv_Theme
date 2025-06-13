@@ -54,8 +54,8 @@ export const Component = props => {
               </div>
             </div>
             {image?.src && (
-              <div className="image_container">
-                <div className="inner_image_container">
+              <div className={styles.image_container}>
+                <div className={styles.inner_image_container}>
                   <RenderImage imageField={image} />
                 </div>
               </div>
