@@ -5,6 +5,7 @@
     display: flex;
         align-items: center;
         justify-content: center;
+        flex-wrap:wrap;
         margin:0 0 70px;
 }
 .animated_text_section .animation_content h2,.animated_text_section .animation_content span{
@@ -26,3 +27,4 @@ font-weight:600;
     margin-bottom: -20%;
     display: inline-block;
 }
+
