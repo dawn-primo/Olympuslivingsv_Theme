@@ -4,14 +4,19 @@ import { Island, logInfo } from '@hubspot/cms-components';
 import ResponsiveSpacingWrapper from '../../shared/SpacingStyleComponent/ResponsiveSpacingWrapper.jsx';
 import AnimatedText from '../../islands/AnimatedText?island';
 import RenderImage from '../../shared/ImageComponent/imageRenderer.jsx';
+import HeadingComponent from '../../shared/HeadingComponent/HeadingComponent.jsx';
 
-export const Component = props => {  
+export const Component = props => {
   const {
     module_id,
+    headingAndTextHeadingLevel, headingAndTextHeading,
     animation_prefix_text,
     animation_suffix_text,
     add_animated_text = [],
-    image
+    image,
+    groupStyle: {
+        headingStyleVariant, headingStyleColor
+    }
   } = props;
 
   logInfo('Animated Section:', props);
@@ -21,17 +26,33 @@ export const Component = props => {
       <div className={styles.animated_text_section}>
         <div className="page-center">
           <div className={styles.inner_animated_text_section}>
-            {animation_prefix_text && <h2>{animation_prefix_text}</h2>}
+            <div className={styles.text_container}>
 
-            <Island
-              module={AnimatedText}
-              hydrateOn="idle"
-              add_animated_text={ add_animated_text }
-              clientOnly
-            />
+              <div className={styles.large_heading}>
+              <HeadingComponent
+                headingLevel={headingAndTextHeadingLevel}
+                headingStyleVariant={headingStyleVariant}
+                heading={headingAndTextHeading}
+                headingStyleColor={headingStyleColor}
+              />
+              </div>
+              <div className={styles.animation_content}>
+                <div className={styles.prefix_text}>
+                  {animation_prefix_text && <h2>{animation_prefix_text}</h2>}
+                </div>
 
-            {animation_suffix_text && <h2>{animation_suffix_text}</h2>}
+                <Island
+                  module={AnimatedText}
+                  hydrateOn="idle"
+                  add_animated_text={add_animated_text}
+                  clientOnly
+                />
 
+                <div className={styles.suffix_text}>
+                  {animation_suffix_text && <h2>{animation_suffix_text}</h2>}
+                </div>
+              </div>
+            </div>
             {image?.src && (
               <div className="image_container">
                 <div className="inner_image_container">
