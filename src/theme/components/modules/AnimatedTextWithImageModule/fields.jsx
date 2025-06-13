@@ -7,6 +7,7 @@ import {
 } from '@hubspot/cms-components/fields';
 import CommonStylesSpacingFields from '../../shared/SpacingStyleComponent/CommonStylesSpacingFields.jsx';
 import HeadingContent from '../../shared/HeadingComponent/HeadingContent.jsx';
+import HeadingStyles from '../../shared/HeadingComponent/HeadingStyle.jsx';
 
 
 export const fields = (
