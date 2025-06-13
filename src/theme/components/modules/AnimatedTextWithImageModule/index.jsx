@@ -7,7 +7,7 @@ import RenderImage from '../../shared/ImageComponent/imageRenderer.jsx';
 
 
 export const Component = props => {
-  // logInfo('Props passed to Activity Section:', props);
+  logInfo(props, 'Animated Text');
   const {
     module_id,
     animation_prefix_text,
@@ -24,7 +24,7 @@ export const Component = props => {
           <div className='page-center'>
             <div className={styles.inner_animated_text_section}>
                 <h2>{animation_prefix_text}</h2>
-                     <Island module={AnimatedText} hydrateOn="idle" props={props} clientOnly />
+                <Island module={AnimatedText} hydrateOn="idle" props={props} clientOnly />
                 <h2>{animation_suffix_text}</h2>
                 <div className="image_container">
                     <div className="inner_image_container">
