@@ -26,6 +26,7 @@ export default function AnimatedText({ add_animated_text = [] }) {
             cursor: null,
             delay: 30,
             deleteSpeed: 20,
+            pauseFor: 3000
           }}
         />
       )}
