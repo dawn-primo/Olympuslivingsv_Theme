@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../ActivitySection/activitySection.module.css';
+import styles from '../AnimatedTextWithImageModule/animatedText.module.css';
 import { Island, logInfo } from '@hubspot/cms-components';
 import ResponsiveSpacingWrapper from '../../shared/SpacingStyleComponent/ResponsiveSpacingWrapper.jsx';
 import AnimatedText from '../../islands/AnimatedText?island';
