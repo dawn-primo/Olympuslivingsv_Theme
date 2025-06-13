@@ -22,7 +22,9 @@ export default function AnimatedText({ add_animated_text = [] }) {
             autoStart: true,
             loop: true,
             wrapperClassName: 'h2',
-            cursorClassName: 'h2'
+            cursorClassName: 'h2',
+            cursor: null,
+            deleteSpeed: 2000
           }}
         />
       )}
