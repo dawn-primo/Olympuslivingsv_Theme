@@ -13,8 +13,8 @@
 .animated_text_section .animation_content .animited_text span.h2{
 font-weight:700;
 }
-.animated_text_section .typewriter-wrapper{
-    margin:0 5px;
+.animated_text_section .Typewriter{
+    margin:0 8px;
  }
 .animated_text_section .large_heading h1{
     margin:0;
