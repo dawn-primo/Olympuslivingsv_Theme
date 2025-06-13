@@ -14,8 +14,8 @@
 .animated_text_section .large_heading h1{
     margin:0;
 }
-.animated_text_section .image_container{
-
+.animated_text_section .animited_text{
+margin:0 8px;
 }
 .animated_text_section .image_container img{
     width:100%;
