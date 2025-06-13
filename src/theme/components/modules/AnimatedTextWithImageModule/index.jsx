@@ -38,7 +38,7 @@ export const Component = props => {
               </div>
               <div className={styles.animation_content}>
                 <div className={styles.prefix_text}>
-                  {animation_prefix_text && <h2>{animation_prefix_text}</h2>}
+                  {animation_prefix_text && <h2>{animation_prefix_text} </h2>}
                 </div>
 
                 <Island
@@ -49,7 +49,7 @@ export const Component = props => {
                 />
 
                 <div className={styles.suffix_text}>
-                  {animation_suffix_text && <h2>{animation_suffix_text}</h2>}
+                  {animation_suffix_text && <h2> {animation_suffix_text}</h2>}
                 </div>
               </div>
             </div>
