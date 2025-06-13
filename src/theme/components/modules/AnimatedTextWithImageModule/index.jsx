@@ -5,7 +5,7 @@ import ResponsiveSpacingWrapper from '../../shared/SpacingStyleComponent/Respons
 import AnimatedText from '../../islands/AnimatedText?island';
 import RenderImage from '../../shared/ImageComponent/imageRenderer.jsx';
 
-export const Component = props => {
+export const Component = props => {  
   const {
     module_id,
     animation_prefix_text,
