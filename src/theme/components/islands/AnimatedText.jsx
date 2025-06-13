@@ -14,13 +14,14 @@ export default function AnimatedText({ add_animated_text = [] }) {
   }, []);
 
   return (
-    <div className={Styles.heading_container}>
+    <div className={Styles.animited_text}>
       {textArray.length > 0 && (
         <Typewriter
           options={{
             strings: textArray,
             autoStart: true,
             loop: true,
+            wrapperClassName: '.h2'
           }}
         />
       )}
