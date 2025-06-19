@@ -14,7 +14,7 @@ export function Component(props) {
     
   } = props;
 
-  logInfo(props, 'Service List Module');
+  // logInfo(props, 'Service List Module');
   return (
     <>
       <ResponsiveSpacingWrapper

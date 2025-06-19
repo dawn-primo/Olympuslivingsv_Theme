@@ -19,7 +19,7 @@ export const Component = props => {
     }
   } = props;
 
-  logInfo('Animated Section:', props);
+  // logInfo('Animated Section:', props);
 
   return (
     <ResponsiveSpacingWrapper moduleId={module_id} fields={props?.fieldValues}>

@@ -17,7 +17,7 @@ export function Component(props) {
     choosecolnumber
   } = props;
 
-  logInfo(props, 'Three Col Card');
+  // logInfo(props, 'Three Col Card');
   return (
     <>
       <ResponsiveSpacingWrapper

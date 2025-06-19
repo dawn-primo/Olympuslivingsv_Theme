@@ -6,7 +6,7 @@ import { IoIosArrowDown } from 'react-icons/io';
 
 export const Component = props => {
   // console.log('Props passed to Island:', props); // Debugging log
-  logInfo('Props passed to BannerVideoSection:', props);
+  // logInfo('Props passed to BannerVideoSection:', props);
   const {
     showVideo,
     videoUrl,

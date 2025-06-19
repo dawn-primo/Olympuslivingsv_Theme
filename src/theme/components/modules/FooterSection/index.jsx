@@ -19,7 +19,7 @@ export function Component(props) {
     copyright_text,
   } = props;
 
-  logInfo('Footer Section Props', props);
+  // logInfo('Footer Section Props', props);
 
   return (
     <footer className={`${styles.footer} footer__site_page`}>

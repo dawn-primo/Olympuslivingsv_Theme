@@ -9,7 +9,7 @@ export function Component(props) {
     module_id
   } = props;
 
-  logInfo(props, 'BG Image Card Props');
+  // logInfo(props, 'BG Image Card Props');
   return (
     <>
       <ResponsiveSpacingWrapper

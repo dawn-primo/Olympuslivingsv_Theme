@@ -18,7 +18,7 @@ export function Component(props) {
     groupContent: { headingAndTextHeadingLevel, headingAndTextHeading },
   } = props;
 const moduleClass = props?.moduleName || 'customclass';
-  logInfo(props, 'Our Team Props');
+  // logInfo(props, 'Our Team Props');
 
   return (
 

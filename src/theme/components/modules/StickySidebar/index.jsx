@@ -51,7 +51,7 @@ export function Component(props) {
   const buttonRel = getLinkFieldRel(link);
   const buttonTarget = getLinkFieldTarget(link);
 
-  logInfo(props, 'Two Col Content With Sticky Sidebar Props');
+  // logInfo(props, 'Two Col Content With Sticky Sidebar Props');
   return (
     <>
       <ResponsiveSpacingWrapper

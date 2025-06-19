@@ -23,7 +23,7 @@ export function Component(props) {
 
 
 
-  logInfo(props, 'Contact');
+  // logInfo(props, 'Contact');
 
 
   return (

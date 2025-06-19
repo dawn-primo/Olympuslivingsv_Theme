@@ -32,7 +32,7 @@ export function Component(props) {
     headingAndTextHeading,
   } = props;
 
-  logInfo(props, 'Three Col Image');
+  // logInfo(props, 'Three Col Image');
 
   const buttonHref = getLinkFieldHref(link);
   const buttonRel = getLinkFieldRel(link);

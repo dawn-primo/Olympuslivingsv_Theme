@@ -4,7 +4,7 @@ import { Island, logInfo } from '@hubspot/cms-components';
 import imageCarousel from '../../islands/imageCarousel?island';
 
 export const Component = props => {
-  logInfo('Props passed to Image Carousel:', props);
+  // logInfo('Props passed to Image Carousel:', props);
 
   const {
     addImage = [],
