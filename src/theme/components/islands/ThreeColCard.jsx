@@ -18,11 +18,11 @@ export default function Threecolcard({
       <div
         className={`${Styles.three_col_container} ${Styles[choosecolnumber]}`}
       >
-        {groupBlocks.map((card, index) => (
-          <div className={Styles.three_col_card} key={index}>
+         {groupBlocks.map((card, cardIndex) => (
+          <div className={Styles.three_col_card} key={cardIndex}>
             <div className={Styles.three_col_card_inner}>
               <div className={Styles.card_heading}>
-                <h3 style={{ color: card_heading_text_color }} className='font-300'>
+                <h3 style={{ color: card_heading_text_color }}>
                   {card.card_heading}
                 </h3>
               </div>
@@ -37,16 +37,15 @@ export default function Threecolcard({
                     className="custom-thumbnail"
                   />
                 )}
-                {/* <RenderImage imageField={card.card_image} /> */}
               </div>
               <div className={Styles.card_text_container}>
-                {card.icon_text_group.map((icontext, index) => (
-                  <div className={Styles.icon_text_content} key={index}>
+                {card.icon_text_group.map((icontext, iconIndex) => (
+                  <div className={Styles.icon_text_content} key={iconIndex}>
                     <div className={Styles.icon_content}>
                       <StyledIcon
                         purpose="DECORATIVE"
-                        fieldPath={`cardgroup[${index}].icon_text_group[${index}].icon_image`}
-                      ></StyledIcon>
+                        fieldPath={`cardgroup[${cardIndex}].icon_text_group[${iconIndex}].icon_image`}
+                      />
                     </div>
                     <div className={Styles.text_content}>
                       <p>
