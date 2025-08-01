@@ -53,7 +53,7 @@ export function Component(props) {
           <div className="header__container">
             <div className="header__logo">
               <a
-                href={logoLink?.url?.href_with_scheme || '#'}
+                href={logoLink || '#'}
                 target={
                   logoLink.open_in_new_tab ? '_blank' : '_self'
                 }

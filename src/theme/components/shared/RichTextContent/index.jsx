@@ -38,6 +38,7 @@ import {
     'nonbreaking_space',
     'source_code',
     'visual_blocks',
+    'fonts',
   ];
   
   export default function RichTextContent(props) {
@@ -54,7 +55,7 @@ import {
         name="richTextContentHTML"
         visibilityRules="ADVANCED"
         advancedVisibility={richTextVisibility}
-        enabledFeatures={featureSet === 'text' ? textFeatureSet : extendedFeatureSet}
+        enabledFeatures={extendedFeatureSet}
         default={richTextDefault}
       />
     );
