@@ -7,8 +7,9 @@
     <meta charset="utf-8" />
     {% if page_meta.html_title or pageTitle %}
     <title>{{ page_meta.html_title or pageTitle }}</title>
-    {% endif %} {% if brand_settings.primaryFavicon.src %}
-    <link rel="shortcut icon" href="{{ brand_settings.primaryFavicon.src }}" />
+    {% endif %} 
+    {% if brand_settings.favicon.src %}
+    <link rel="shortcut icon" href="{{ brand_settings.favicon.src }}" />
     {% endif %}
     <meta name="description" content="{{ page_meta.meta_description }}" />
 
