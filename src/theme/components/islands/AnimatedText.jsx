@@ -9,8 +9,8 @@ export default function AnimatedText({ add_animated_text = [] }) {
     .filter(Boolean);
 
   useEffect(() => {
-    console.log('Raw data:', add_animated_text);
-    console.log('Filtered array:', textArray);
+    // console.log('Raw data:', add_animated_text);
+    // console.log('Filtered array:', textArray);
   }, []);
 
   return (
