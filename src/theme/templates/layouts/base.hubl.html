@@ -70,9 +70,24 @@
       %} {% endblock footer %} {# To see a full list of what is included via
       standard_footer_includes please reference this article:
       https://developers.hubspot.com/docs/cms/hubl/variables#required-page-template-variables
-      #} {% set custom_footer_includes = standard_footer_includes|split('\n') %}
-      {% for line in custom_footer_includes %} {% unless line is
-      string_containing '242794260.js' %} {{line}} {% endunless %} {% endfor %}
+      #} 
+      {% set custom_footer_includes = standard_footer_includes|split('\n') %}
+    {% for line in custom_footer_includes %}      
+      {% unless line is string_containing '242794260.js' %}
+        {{line}}
+      {% endunless %}      
+    {% endfor %}
+    <script>
+      var scrollPos = 10;
+      var counter = 0;
+      $(window).scroll(function(){
+        var scrollPosCur = $(this).scrollTop();
+        if (scrollPosCur > scrollPos && counter == 0) {
+          $(".body-wrapper").append('<script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/242794260.js"><\/script>');
+          counter++; 
+        }  
+      });
+    </script>
     </div>
 
     <script
